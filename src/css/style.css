@@ -7,15 +7,15 @@ body {
     font-family: 'Quicksand', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    
+
 }
 
 
 header {
     background-color: #000;
     color: #fff;
-    padding: 1em 0;    
-    margin:  0 auto;
+    padding: 1em 0;
+    margin: 0 auto;
 
 }
 
@@ -37,22 +37,26 @@ main {
     padding: 0 20px;
 }
 
-.nav-left, .nav-right {
+.nav-left,
+.nav-right {
     display: flex;
 }
 
-.nav-left li, .nav-right li {
+.nav-left li,
+.nav-right li {
     margin: 0 3em;
 }
 
-.nav-left a, .nav-right a {
+.nav-left a,
+.nav-right a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
     font-size: 2.5rem;
 }
 
-.nav-left a:hover, .nav-right a:hover {
+.nav-left a:hover,
+.nav-right a:hover {
     color: red;
 }
 
@@ -186,6 +190,7 @@ main {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -342,37 +347,49 @@ main {
 
 
 @media screen and (max-width:699px) {
+    .nav-left a, .nav-right a {
+        font-size: 1rem;
+    }
+
     .slider-image {
         width: 180px;
     }
+
     .slider .texto p {
         font-size: 2rem;
     }
+
     .slider .texto h2 {
         font-size: 3rem;
     }
 
-    
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 
 }
 
 @media screen and (min-width:700px) and (max-width:1024px) {
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 1.5rem;
+    }
+
     .slider-image {
         width: 400px;
     }
 
     .slider .texto p {
-        font-size: 3rem;    
+        font-size: 3rem;
     }
-    
+
     .slider .texto h2 {
         font-size: 5rem;
 
@@ -381,6 +398,7 @@ main {
     .information-text-title {
         font-size: 2rem;
     }
+
     .information-text-info {
         font-size: 1.2rem;
 
