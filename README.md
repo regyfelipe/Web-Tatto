@@ -40,7 +40,7 @@ Este projeto foi desenvolvido por [Regy Felipe](https://github.com/regyfelipe).
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão, entre em contato através do email regy@email.com.
+Se você tiver alguma dúvida ou sugestão, entre em contato através do email regy@gmail.com.
 
 ## Licença
 
