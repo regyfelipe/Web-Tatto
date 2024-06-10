@@ -1,0 +1,389 @@
+/* Reset básico */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    
+}
+
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;    
+    margin:  0 auto;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+}
+
+.nav-left li, .nav-right li {
+    margin: 0 1em;
+}
+
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 2rem;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: red;
+}
+
+.logo {
+    width: 50px;
+}
+
+
+/* slider */
+
+
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: url('../images/bk.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.slider-image {
+    filter: drop-shadow(1px 1px 15px #cccccc22);
+}
+
+.slider .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: 2;
+}
+
+.slider .texto p {
+    font-size: 3rem;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+
+}
+
+.slider .texto h2 {
+    font-size: 8rem;
+    font-family: Abster, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+.portfolio {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.portfolio h2 {
+    font-family: Abster, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.instagram-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e1306c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.instagram-link i {
+    margin-right: 5px;
+}
+
+.instagram-link:hover {
+    color: #c13584;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ----------------------------------- */
+/* Informações Adicionais e Tatuadores */
+/* ----------------------------------- */
+
+.information {
+    padding: 2em 0;
+    background-color: #f9f9f9;
+}
+
+.information-title {
+    font-family: Abster, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.information-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.information-text-left,
+.information-text-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 1em;
+}
+
+.information-text-image {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.text-right {
+    margin: 0 5rem;
+}
+
+.information-text-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.information-text-info {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.redesociais {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.redesociais i {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.redesociais i:hover {
+    color: #e1306c;
+}
+
+
+/* ----------------------------------- */
+/* Contato */
+/* ----------------------------------- */
+
+
+.contact {
+    padding: 2em 0;
+    background-color: #f9f9f9;
+}
+
+.contact-title {
+    font-family: Abster, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-details {
+    flex: 1;
+    padding: 1em;
+}
+
+.contact-details h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.contact-details p {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-details ul li {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-map {
+    padding: 1em;
+    text-align: center;
+}
+
+.contact-map iframe {
+    width: 95%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width:699px) {
+    .slider-image {
+        width: 180px;
+    }
+    .slider .texto p {
+        font-size: 2rem;
+    }
+    .slider .texto h2 {
+        font-size: 3rem;
+    }
+
+    
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+}
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    .slider-image {
+        width: 400px;
+    }
+
+    .slider .texto p {
+        font-size: 3rem;    
+    }
+    
+    .slider .texto h2 {
+        font-size: 5rem;
+
+    }
+
+    .information-text-title {
+        font-size: 2rem;
+    }
+    .information-text-info {
+        font-size: 1.2rem;
+
+    }
+
+}
